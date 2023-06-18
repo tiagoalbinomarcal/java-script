@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vou amassar</title>
+</head>
+<body>
+    <h1>teste para ver se você é pica ou paia</h1>
+    Coloque sua nacionalidade ao lado: <input type="text" name="naci" id="naci">
+    <input type="button" value="testar" onclick="clicar()">
+    <div id="res">
+        Aqui ficará a resposta
+    </div>
+
+    <script>
+        function clicar(){
+            var pais = document.getElementById('naci')
+            var res = document.getElementById('res')
+            if(pais.value == 'brasil'){
+                res.innerHTML = "pica"
+            }else{
+                res.innerHTML = "paia"
+            }            
+        }
+        
+    </script>
+    
+</body>
+</html>

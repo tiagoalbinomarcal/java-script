@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>SISTEMAS DE MULTAS - VELOCIDADE MÁXIMA = 100Km/h</h1>
+    Coloque a velocidade do carro aqui -> <input type="number" name="valor" id="valor">km/h
+    <input type="button" value="checar" onclick="calcular()">
+    <div id="res">
+        AQUI FICARÁ A RESPOSTA DO PROGRAMA
+    </div>
+    <!--<div id="res2">
+        AQUI FICARÁ A RESPOSTA 2 DO PROGRAMA
+    </div> -->
+<script>
+    function calcular(){
+        var semivel = document.getElementById('valor')
+        var res = document.getElementById('res')
+        var vel = Number(semivel.value)
+        //var res2 = document.getElementById('res2')
+        res.innerHTML = `<p>sua velocidade é de ${vel}Km/h</p>`
+        
+        if (vel > 100){
+            res.innerHTML += "VOCÊ SERÁ MULTADO"
+        }else{
+            res.innerHTML += "ent fodase"
+        }
+        res.innerHTML += `<p> dirija sempre com cuidado</p>`
+
+    }
+</script>
+
+
+
+</body>
+</html>

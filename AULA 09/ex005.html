@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body {
+            background: rgb(93, 93, 196);
+            color: white;
+            font: normal 18pt Arial;
+
+        }
+    </style>    
+</head>
+<body>
+    <h1>iniciando os estudos em DOM</h1>
+    <p>OLÁ MUNDO</p>
+    <p>aprendendo a usa o <strong>DOM</strong> em JAVA SCRIPT.</p>
+    <div id="msg">SALVE CUZAO</div>
+    <script>
+        /*var p1 = window.document.getElementsByTagName('p')[1 ]
+        var corpo = window.document.body
+        window.document.write(' está escrito assim: ' + p1.innerText)
+        p1.style.color = 'orange'
+        corpo.style.color = 'black'*/
+        //d.innerText = 'fodase'
+        //d.style.color = 'black'
+        //var d = window.document.getElementById('msg')
+        //window.document.getElementById('msg').innerText = "uai"
+        var n = document.querySelector('div#msg') //CLASS -> "." | DIV -> "#"
+        n.style.background = "green"
+        n.style.color = "black"
+
+    </script>
+</body>
+</html>
